@@ -15,7 +15,7 @@ ${TIME_API_URL}     http://worldtimeapi.org/api/timezone/Europe/Helsinki
 
 
 *** Tasks ***
-Minimal task
+Adjust heating based on the current Finnish electricity price.
     Get the current price based on the date
     ${temperature_setting}=    Get the current temperature setting
     IF    '${temperature_setting}' == 'Esiasetus 1' and $price < ${10}
